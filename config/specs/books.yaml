@@ -79,6 +79,7 @@ policies:
           - title
           - author_id
           - summary
+          - translator
           - isbn
           - genre
           - page_count
@@ -98,6 +99,7 @@ policies:
           - title
           - author_id
           - summary
+          - translator
           - isbn
           - genre
           - page_count
@@ -177,6 +179,7 @@ policies:
           - title
           - author_id
           - author_name
+          - translator
           - summary
           - isbn
           - genre
@@ -281,6 +284,14 @@ properties:
       default_expr: array()
   - name: summary
     description: A short synopsis of the book.
+    schema:
+      kind: string
+    filterable: false
+    storage:
+      kind: standard
+      storage_type: text
+  - name: translator
+    description: Who translated the book, if it is a translation.
     schema:
       kind: string
     filterable: false
