@@ -179,6 +179,7 @@ policies:
           - title
           - author_id
           - author_name
+          - translator
           - summary
           - isbn
           - genre
